@@ -1,0 +1,20 @@
+<%= form_for @user, validate: true, url: {:action => 'create'}, html: { class: "sign-up-form"} do |f| %>
+  <!--<div class="form-field">-->
+    <!--<%= f.label "#{t('Name')}", class: "form-field__label" %>-->
+    <!--<%= f.text_field :firstName, placeholder: "#{t('first_name')}", class: "form-field__box" %>-->
+    <!--<%= f.text_field :lastName, placeholder: "#{t('last_name')}", class: "form-field__box" %>-->
+  <!--</div>-->
+  <div class="form-field">
+    <%= f.label "#{t('username')}", class: "form-field__label" %>
+    <%= f.text_field :username, class: "form-field__box" %>
+  </div>
+  <div class="form-field">
+    <%= f.label "#{t('email')}", class: "form-field__label" %>
+    <%= f.email_field :email, class: "form-field__box" %>
+  </div>
+  <div class="form-field">
+    <%= f.label "#{t('password')}", class: "form-field__label" %>
+    <%= f.password_field :password, class: "form-field__box" %>
+  </div>
+  <%= f.submit 'create account', class: "submit-button" %>
+<% end %>

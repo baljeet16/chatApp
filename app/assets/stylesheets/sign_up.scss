@@ -1,0 +1,45 @@
+// Place all the styles related to the sign_up controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$border-color : grey;
+$submit-color : blue;
+
+.sign-up-form {
+  background: #080436;
+  border: 1px black;
+  width: 362px;
+  height: 400px;
+  margin: 120px auto;
+  position: relative;
+  box-shadow: 2px 5px 20px grey;
+  opacity: 0.9;
+}
+
+.form-field {
+  width: 200px;
+  padding: 20px;
+  &__box {
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  &__label {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.submit-button {
+  position: absolute;
+  left: 100px;
+  margin-top: 50px;
+  color: white;
+  background: #080436;
+  font-weight: 600;
+  width: 150px;
+  height: 35px;
+  font-size: 16px;
+  box-shadow: 2px 5px 20px green;
+}
+
